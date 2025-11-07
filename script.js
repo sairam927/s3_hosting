@@ -1,4 +1,4 @@
-// Smooth scroll for nav links
+// Smooth Scroll for navigation
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
@@ -11,8 +11,10 @@ document.querySelectorAll("nav a").forEach(link => {
 // Auto year update
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Button animation
+// Animated button
 const learnBtn = document.getElementById("learnBtn");
 learnBtn.addEventListener("click", () => {
-  alert("This website is hosted using AWS S3 + Cloudflare + GitHub Actions 🚀");
+  alert("Deployed using AWS S3 + Cloudflare + GitHub Actions 🚀");
+  learnBtn.style.backgroundColor = "#00ffcc";
+  setTimeout(() => (learnBtn.style.backgroundColor = "#ffcb05"), 1000);
 });
