@@ -1,120 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #f3f6fb;
-  color: #222;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  overflow-x: hidden;
 }
 
-header {
-  background: #0078ff;
-  color: white;
-  padding: 20px 50px;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
 }
 
-header h1 {
-  font-size: 24px;
-  letter-spacing: 1px;
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
-nav a {
+.logo span {
+  color: #ffcb05;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #ffcb05;
 }
 
 .hero {
-  height: 80vh;
-  background: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://images.unsplash.com/photo-1556761175-4b46a572b786') center/cover;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  padding: 0 20px;
 }
 
 .hero-content h2 {
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 0.8rem;
 }
 
 .hero-content p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  max-width: 600px;
-  margin: 0 auto 20px;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.hero-content button {
-  background: #ffca28;
-  color: #000;
+button {
+  background-color: #ffcb05;
   border: none;
-  padding: 12px 30px;
-  border-radius: 6px;
-  cursor: pointer;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
   font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.projects {
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.contact {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.contact a {
+  color: #ffcb05;
+  text-decoration: none;
   font-weight: 600;
 }
 
-.hero-content button:hover {
-  background: #ffc107;
-}
-
-.features {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.features h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #0078ff;
-}
-
-.feature-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.feature {
-  background: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 25px;
-  width: 300px;
-  transition: transform 0.3s ease;
-}
-
-.feature:hover {
-  transform: translateY(-8px);
-}
-
-.feature h3 {
-  color: #0078ff;
-  margin-bottom: 10px;
-}
-
 footer {
-  background: #111;
-  color: white;
   text-align: center;
-  padding: 15px;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
   font-size: 0.9rem;
-  margin-top: 40px;
 }
