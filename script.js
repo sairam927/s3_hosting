@@ -1,41 +1,114 @@
-// script.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutlapalli Gnanendra Sairam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="profile-placeholder.png" alt="Profile Photo" class="profile-photo">
+            <h1>Gutlapalli Gnanendra Sairam</h1>
+            <h2 id="animated-title">AWS Engineer | DevOps Engineer | Cloud Enthusiast</h2>
+            <div class="hero-buttons">
+                <a href="resume.pdf" class="btn">Resume</a>
+                <a href="https://github.com/sairam927" class="btn" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sairam927" class="btn" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </header>
 
-// Animated Title Effect
-const title = document.getElementById('animated-title');
-const phrases = [
-'AWS Engineer',
-'DevOps Engineer',
-'Cloud Enthusiast'
-];
-let i = 0;
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate AWS & DevOps engineer with hands-on experience in cloud computing, automation, and scalable infrastructure. Skilled in building, deploying, and optimizing applications using modern technologies and best practices.</p>
+    </section>
 
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <span>Python</span><span>C</span><span>C++</span><span>AWS</span><span>Azure</span>
+            <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>GitHub</span><span>Networking</span>
+        </div>
+    </section>
 
-function changeTitle() {
-title.textContent = phrases[i];
-i = (i + 1) % phrases.length;
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Web Capture & Emotion Analysis</h3>
+                <p>Implemented a real-time emotion detection system using Python and AWS Rekognition integrated with webcam capture.</p>
+            </div>
+            <div class="project-card">
+                <h3>Inter-VLAN Communication using Router-on-a-Stick</h3>
+                <p>Designed and deployed VLAN routing using a router-on-a-stick setup, enhancing network segmentation and security.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>CCNA</li>
+            <li>Python Certification</li>
+            <li>NDG Linux Unhatched</li>
+        </ul>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>B.Tech in ECE, Aditya College of Engineering (2022–present)</li>
+            <li>Intermediate, Narayana Jr. College</li>
+            <li>SSC, Paparao High School</li>
+        </ul>
+    </section>
+
+    <!-- CODING PROFILES SECTION -->
+    <section id="coding-profiles">
+        <h2>Coding Profiles & Coding Blocks</h2>
+        <div class="coding-links">
+            <a href="https://github.com/sairam927" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://leetcode.com/u/sairam2004/" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
+            <a href="https://www.geeksforgeeks.org/user/sairamgut5455/" target="_blank"><i class="fas fa-laptop-code"></i> GeeksforGeeks</a>
+        </div>
+        <div class="coding-blocks">
+            <pre><code>/* Example Python Code */
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet('Sairam')
+</code></pre>
+            <pre><code>/* Example C++ Code */
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, Sairam!" &lt;&lt; endl;
+    return 0;
 }
-setInterval(changeTitle, 2500); // Change title every 2.5 seconds
+</code></pre>
+        </div>
+    </section>
 
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sairam.gutlapalli@gmail.com">sairam.gutlapalli@gmail.com</a></p>
+        <p>Location: Ongole, Andhra Pradesh</p>
+    </section>
 
-// Optional: Scroll Reveal for sections
-const sections = document.querySelectorAll('section');
-
-
-function revealSections() {
-const triggerBottom = window.innerHeight * 0.85;
-sections.forEach(section => {
-const sectionTop = section.getBoundingClientRect().top;
-if(sectionTop < triggerBottom) {
-section.style.opacity = 1;
-section.style.transform = 'translateY(0)';
-} else {
-section.style.opacity = 0;
-section.style.transform = 'translateY(30px)';
-}
-});
-}
-
-
-window.addEventListener('scroll', revealSections);
-window.addEventListener('load', revealSections);
+    <script src="script.js"></script>
+</body>
+</html>
