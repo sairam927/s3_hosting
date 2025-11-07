@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cloud-Based Voting System</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cloud Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Cloud-Based Online Voting System</h1>
+  <header class="navbar">
+    <h1 class="logo">Sairam<span>Cloud</span></h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Register</a>
-      <a href="#">Login</a>
-      <a href="#">Results</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
-      <h2>Vote Smart, Vote Securely</h2>
-      <p>Empowering colleges with transparent and serverless voting powered by AWS Cloud.</p>
-      <button onclick="window.location.href='register.html'">Get Started</button>
+      <h2>Welcome to My Cloud Portfolio ☁️</h2>
+      <p>Building scalable solutions with AWS, Azure & DevOps.</p>
+      <button id="learnBtn">Learn More</button>
     </div>
   </section>
 
-  <section class="features">
-    <h2>Our Features</h2>
-    <div class="feature-container">
-      <div class="feature">
-        <h3>Serverless Design</h3>
-        <p>Built using AWS Lambda and DynamoDB for high scalability and zero downtime.</p>
+  <section id="projects" class="projects">
+    <h2>My Featured Projects 🚀</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Serverless Voting App</h3>
+        <p>Built using AWS Lambda, API Gateway, and DynamoDB.</p>
       </div>
-      <div class="feature">
-        <h3>Secure Login</h3>
-        <p>Face recognition and OTP verification to ensure authentic voting access.</p>
+      <div class="card">
+        <h3>Emotion Detection System</h3>
+        <p>Python + AWS Rekognition + Flask-based analysis system.</p>
       </div>
-      <div class="feature">
-        <h3>Real-Time Results</h3>
-        <p>Live results displayed instantly after each voting session ends.</p>
+      <div class="card">
+        <h3>Travel Chatbot</h3>
+        <p>Amazon Lex-based chatbot for personalized travel guidance.</p>
       </div>
     </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in Touch 📬</h2>
+    <p>Email: <a href="mailto:votingonline034@gmail.com">votingonline034@gmail.com</a></p>
   </section>
 
   <footer>
-    <p>© 2025 College Voting System | Developed by Sairam</p>
+    <p>&copy; <span id="year"></span> Sairam | All Rights Reserved</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
