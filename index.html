@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sairam Cloud Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gutlapalli Gnanendra Sairam | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="background"></div>
 
-  <header class="navbar">
-    <h1 class="logo">Sairam<span>Cloud</span></h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Welcome to My Cloud Portfolio ☁️</h2>
-      <p>Crafting scalable and secure cloud solutions using AWS, Azure, and DevOps.</p>
-      <button id="learnBtn">Explore More</button>
-    </div>
-  </section>
+<!-- HERO SECTION -->
+<header class="hero">
+<div class="hero-content">
+<img src="profile-placeholder.png" alt="Profile Photo" class="profile-photo">
+<h1>Gutlapalli Gnanendra Sairam</h1>
+<h2 id="animated-title">AWS Engineer | DevOps Engineer | Cloud Enthusiast</h2>
+<div class="hero-buttons">
+<a href="resume.pdf" class="btn">Resume</a>
+<a href="https://github.com/sairam927" class="btn" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/sairam927" class="btn" target="_blank">LinkedIn</a>
+</div>
+</div>
+</header>
 
-  <section id="projects" class="projects">
-    <h2>My Cloud Projects 🚀</h2>
-    <div class="project-grid">
-      <div class="card">
-        <h3>Serverless Voting System</h3>
-        <p>Developed using AWS Lambda, DynamoDB, and API Gateway with secure IAM roles.</p>
-      </div>
-      <div class="card">
-        <h3>Facial Emotion Analyzer</h3>
-        <p>Python + AWS Rekognition + Flask app that detects emotion from webcam input.</p>
-      </div>
-      <div class="card">
-        <h3>Travel Chatbot</h3>
-        <p>AI-powered Amazon Lex chatbot for destination guidance and suggestions.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me 📬</h2>
-    <p>Reach out for collaborations or cloud solutions!</p>
-    <p>Email: <a href="mailto:sairam.gutlapalli@gmail.com">votingonline034@gmail.com</a></p>
-  </section>
+<!-- ABOUT SECTION -->
+<section id="about">
+<h2>About Me</h2>
+<p>Passionate AWS & DevOps engineer with hands-on experience in cloud computing, automation, and scalable infrastructure. Skilled in building, deploying, and optimizing applications using modern technologies and best practices.</p>
+</section>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Sairam | Cloud Developer | All Rights Reserved</p>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+<!-- SKILLS SECTION -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-container">
+<span>Python</span><span>C</span><span>C++</span><span>AWS</span><span>Azure</span>
+<span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>GitHub</span><span>Networking</span>
+</div>
+</section>
+
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects-container">
+<div class="project-card">
+<h3>Web Capture & Emotion Analysis</h3>
+<p>Implemented a real-time emotion detection system using Python and AWS Rekognition integrated with webcam capture.</p>
+</div>
+<div class="project-card">
+<h3>Inter-VLAN Communication using Router-on-a-Stick</h3>
+<p>Designed and deployed VLAN routing using a router-on-a-stick setup, enhancing network segmentation and security.</p>
+</div>
+</div>
+</section>
+
+
+<!-- CERTIFICATIONS SECTION -->
+<section id="certifications">
+<h2>Certifications</h2>
+<ul>
+<li>AWS Certified Cloud Practitioner</li>
+<li>CCNA</li>
+<li>Python Certification</li>
+<li>NDG Linux Unhatched</li>
+</ul>
 </html>
